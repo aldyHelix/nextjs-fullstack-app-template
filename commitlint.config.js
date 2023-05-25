@@ -30,7 +30,9 @@ module.exports = {
 		2,
 		'always',
 		[
+		  'add',
 		  'build',
+		  'update',
 		  'chore',
 		  'ci',
 		  'docs',
