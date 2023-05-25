@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "globals": {
+    "React": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+  }
 }
+
+/*
+  * Next.js recommends using ESLint to lint your code.
+  *
+  * https://nextjs.org/docs/basic-features/eslint
+  *In the above small code example we have added a few additional defaults, we have said that React will always be defined even if we don't specifically import it, and I have added a personal custom rule that I like which allows you to prefix variables with an underscore _ if you have declared them but not used them in the code.
+
+*/
